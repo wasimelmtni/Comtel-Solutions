@@ -7,16 +7,24 @@
     <style>
         body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
         header { background: #222; color: white; padding: 20px; text-align: center; }
+        header img { max-width: 200px; display: block; margin: 0 auto 10px; }
         nav { text-align: center; padding: 15px; background: #444; }
         nav a { color: white; margin: 0 15px; text-decoration: none; font-size: 18px; }
-        .container { max-width: 1200px; margin: auto; padding: 20px; background: white; }
+        .container { max-width: 1200px; margin: auto; padding: 20px; background: white; text-align: center; }
         .service { margin-bottom: 30px; }
         .contact { background: #ddd; padding: 25px; text-align: center; }
         footer { background: #222; color: white; text-align: center; padding: 15px; margin-top: 20px; }
+        .logo { max-width: 150px; margin: 20px auto; display: block; }
+        .quote-form { background: #eee; padding: 20px; margin: 20px auto; width: 50%; text-align: left; }
+        .quote-form label { display: block; margin-bottom: 5px; font-weight: bold; }
+        .quote-form input, .quote-form textarea { width: 100%; padding: 8px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 5px; }
+        .quote-form button { background: #222; color: white; padding: 10px 15px; border: none; cursor: pointer; }
+        .quote-form button:hover { background: #555; }
     </style>
 </head>
 <body>
     <header>
+        <img src="Comtel_Sulotion.png" alt="Comtel Solutions Logo">
         <h1>Comtel Solutions</h1>
         <p>15+ Years of Expertise in Security & Access Control Solutions</p>
     </header>
@@ -25,11 +33,13 @@
         <a href="#services">Solutions</a>
         <a href="#about">About Us</a>
         <a href="#contact">Contact</a>
+        <a href="#quote">Get a Quote</a>
     </nav>
     
     <div class="container">
         <section id="services">
             <h2>Our Access Control Solutions</h2>
+            <img class="logo" src="Comtel_Sulotion.png" alt="Comtel Solutions Logo">
             <div class="service">
                 <h3>Keycard & Fob Access Systems</h3>
                 <p>Secure access with advanced keycard and fob-based entry for businesses and residential complexes.</p>
@@ -50,11 +60,32 @@
         
         <section id="about">
             <h2>Why Choose Comtel Solutions?</h2>
+            <img class="logo" src="Comtel_Sulotion.png" alt="Comtel Solutions Logo">
             <p>With over 15 years of experience, we specialize in cost-effective, high-quality access control installations for commercial buildings, apartment complexes, condos, and private properties. Our solutions ensure security, efficiency, and convenience.</p>
+        </section>
+        
+        <section id="quote" class="quote-form">
+            <h2>Get a Quote</h2>
+            <form action="mailto:wasim@comtelsolution.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Submit</button>
+            </form>
         </section>
         
         <section id="contact" class="contact">
             <h2>Contact Us</h2>
+            <img class="logo" src="Comtel_Sulotion.png" alt="Comtel Solutions Logo">
             <p>Let's discuss how we can secure your property.</p>
             <p>Email: <a href="mailto:wasim@comtelsolution.com">wasim@comtelsolution.com</a> | <a href="mailto:sales@comtelsolution.com">sales@comtelsolution.com</a></p>
             <p>Phone: <a href="tel:8326140914">832-614-0914</a></p>
